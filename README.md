@@ -65,6 +65,9 @@
 4. rerank 또한 bge-m3-reranker-based ONNX INT8로 하여 재순위화 비교해 볼 예정.
 
 --- 
+## 평가 기준
+### **QA 셋에 활용한 동일한 문서를 Question만 보고 RAG 시스템은 제대로 검색했는가를 기준으로 판단함**
+  
 - **단순 rerank 없이 검색한 결과(355개)**
 <img width="780" height="282" alt="image" src="https://github.com/user-attachments/assets/55d234a0-c189-4f7d-abf4-9cb4d4542065" />
 
