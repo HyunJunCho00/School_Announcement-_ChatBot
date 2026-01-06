@@ -55,10 +55,19 @@
 - **평가**: 자동 평가지표(LMM Judge, 커스텀 메트릭)
 
 ---
+---
 
-## ⚠️ 현재 상태
-- 학과 단위 공지사항 크롤링 진행 중
-- Qdrant + Upstage 기반 검색 구조 설계 완료
-- Streaming 형식 응답 테스트 진행 중
+## 26.01.06 현재 상황 점검
+
+1. 학과 단위 공지사항 크롤링 완료(2025.01.01 이후의 데이터)
+2. bge-m3 (ONNX INT8) + Qdrant(SQ INT8) + Kiwi+ BM25 기반으로 한 sprase +dense  hybrid RAG 구축 완료
+3. neo4j 활용한 graph rag 구축 중 일단 vllm qwen 2.5 -32b structed awq 활용하여 graph 1차 구축 완료
+4. rerank 또한 bge-m3-reranker-based ONNX INT8로 하여 재순위화 비교해 볼 예정.
+
+--- 
+- **단순 rerank 없이 검색한 결과(355개)**
+<img width="780" height="282" alt="image" src="https://github.com/user-attachments/assets/55d234a0-c189-4f7d-abf4-9cb4d4542065" />
+
+- **rerank 도입 후 검색 결과 (355개)**
 
 
